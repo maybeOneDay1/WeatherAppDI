@@ -1,0 +1,23 @@
+﻿@model CityWeather
+
+<!doctype html>
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    @if(Model != null) {
+        <h1>@Model.CityUniqueCode</h1>
+        <h2>@Model.CityName</h2>
+        <h2>@Model.TemperatureFahrenheit</h2>
+        <h2>@Model.DateAndTime</h2>
+    } else {
+        <h1>City not found</h1>
+    }
+    <a href="/">Back to home page</a>
+
+    
+
+</body>
+</html>
